@@ -4,7 +4,7 @@ def open_audio(path):
     ext = path.split(".")[-1]
 
     try:
-        aud = AudioSegment.from_file("never_gonna_give_you_up.mp4", ext)
+        aud = AudioSegment.from_file(path, ext)
     except:
         raise Exception(f"Could not open file {path} with extension {ext}.")
 
